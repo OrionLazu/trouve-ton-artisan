@@ -20,6 +20,9 @@ dist-ssr
 # Vercel
 .vercel
 
+# Configuration locale de l'assistant
+.claude
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
