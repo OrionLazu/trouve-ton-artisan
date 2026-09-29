@@ -1,0 +1,28 @@
+// Page 404
+
+.not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  &__image {
+    width: 100%;
+    max-width: 20rem;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  &__code {
+    margin-bottom: 0.5rem;
+    color: $ta-blue;
+    font-size: clamp(4rem, 18vw, 7rem);
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  &__text {
+    margin-bottom: 1.5rem;
+    font-size: 1.25rem;
+  }
+}

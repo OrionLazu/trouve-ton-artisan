@@ -1,0 +1,67 @@
+// En-tête : logo, menu des catégories et barre de recherche
+
+.site-header {
+  background-color: $white;
+  border-bottom: 4px solid $ta-blue;
+  box-shadow: 0 2px 8px rgba(56, 64, 80, 0.1);
+
+  // En-tête fixe uniquement sur grand écran pour ne pas masquer le contenu sur mobile
+  @include media-breakpoint-up(lg) {
+    position: sticky;
+    top: 0;
+    z-index: $zindex-sticky;
+  }
+
+  .navbar-brand {
+    margin-right: 1.5rem;
+    padding-block: 0;
+  }
+
+  &__logo {
+    display: block;
+    width: auto;
+    height: 48px;
+
+    @include media-breakpoint-up(lg) {
+      height: 60px;
+    }
+  }
+
+  .navbar-toggler {
+    border-color: $ta-dark-blue;
+  }
+
+  .nav-link {
+    padding: 0.75rem 0.5rem;
+    color: $ta-grey;
+    font-weight: 500;
+
+    &:hover,
+    &:focus-visible {
+      color: $ta-blue;
+    }
+
+    // Page courante : couleur, graisse et soulignement (l'information ne repose pas que sur la couleur)
+    &.active {
+      color: $ta-blue;
+      font-weight: 600;
+      text-decoration: underline;
+      text-decoration-thickness: 3px;
+      text-underline-offset: 0.4em;
+    }
+
+    @include media-breakpoint-up(lg) {
+      padding: 1.25rem 1rem;
+    }
+  }
+}
+
+.search-bar {
+  padding-block: 0.75rem 1rem;
+
+  @include media-breakpoint-up(lg) {
+    width: 18rem;
+    margin-left: auto;
+    padding-block: 0;
+  }
+}
