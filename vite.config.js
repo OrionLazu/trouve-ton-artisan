@@ -15,6 +15,12 @@ export default defineConfig({
   plugins: [react()],
   server: { proxy: apiProxy },
   preview: { proxy: apiProxy },
+  build: {
+    // Le minifieur CSS regroupe certaines règles de Bootstrap avec la pseudo-classe
+    // propriétaire :-webkit-any(), refusée par le validateur du W3C. On conserve donc
+    // la feuille de style non minifiée : le poids compressé reste quasiment identique.
+    cssMinify: false,
+  },
   css: {
     preprocessorOptions: {
       scss: {
