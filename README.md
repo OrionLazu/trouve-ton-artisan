@@ -3,7 +3,8 @@
 Plateforme de la région **Auvergne-Rhône-Alpes** permettant aux particuliers de trouver un artisan
 et de le contacter via un formulaire (réponse sous 48h).
 
-- **Site en ligne :** _à compléter après le déploiement_
+- **Site en ligne :** <https://trouve-ton-artisan-sage.vercel.app>
+- **Dépôt GitHub :** <https://github.com/OrionLazu/trouve-ton-artisan>
 - **Maquettes Figma :** _à compléter_
 
 ## Technologies
@@ -26,7 +27,7 @@ et de le contacter via un formulaire (réponse sous 48h).
 ## Installation
 
 ```bash
-git clone https://github.com/<votre-compte>/trouve-ton-artisan.git
+git clone https://github.com/OrionLazu/trouve-ton-artisan.git
 cd trouve-ton-artisan
 npm install
 ```
@@ -105,11 +106,19 @@ pendant le développement.
 
 ## Déploiement sur Vercel
 
+Le site est déployé à l'adresse <https://trouve-ton-artisan-sage.vercel.app>.
+
+Pour reproduire le déploiement :
+
 1. Importer le dépôt GitHub sur [vercel.com](https://vercel.com) (préréglage **Vite** détecté automatiquement).
-2. Renseigner les variables d'environnement `SMTP_*`, `MAIL_FROM` et `CONTACT_RECIPIENT` dans les paramètres du projet.
-3. Chaque fusion sur la branche `main` déclenche un nouveau déploiement.
+2. Renseigner les variables d'environnement `SMTP_*`, `MAIL_FROM` et `CONTACT_RECIPIENT` dans
+   **Settings → Environment Variables**, pour les environnements *Production* et *Preview*.
+3. Déployer après chaque fusion sur la branche `main`.
 
 Le fichier `vercel.json` redirige toutes les routes vers React Router (page 404 incluse) et ajoute les en-têtes de sécurité HTTP.
+
+En production, les messages du formulaire sont expédiés vers une **boîte e-mail de test** : aucun artisan n'est
+contacté tant que le site n'est pas raccordé à un service d'envoi réel.
 
 ## Workflow Git
 
