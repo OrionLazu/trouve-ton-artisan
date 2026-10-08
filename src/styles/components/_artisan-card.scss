@@ -1,0 +1,59 @@
+// Fiche résumée d'un artisan (entièrement cliquable)
+
+.artisan-list {
+  margin-bottom: 0;
+}
+
+.artisan-card {
+  border: 1px solid rgba(0, 73, 124, 0.15);
+  border-top: 4px solid $ta-blue;
+  background-color: $white;
+  transition:
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+
+  &:hover,
+  &:focus-within {
+    box-shadow: 0 0.5rem 1.25rem rgba(56, 64, 80, 0.15);
+    transform: translateY(-3px);
+  }
+
+  // Le contour de focus est porté par toute la carte
+  &:focus-within {
+    outline: 3px solid $ta-dark-blue;
+    outline-offset: 2px;
+  }
+
+  .stretched-link:focus-visible {
+    outline: none;
+  }
+
+  &__name {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+
+    a {
+      color: $ta-dark-blue;
+      text-decoration: none;
+    }
+  }
+
+  &:hover &__name a {
+    text-decoration: underline;
+  }
+
+  &__detail {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.25rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .icon {
+      color: $ta-blue;
+    }
+  }
+}

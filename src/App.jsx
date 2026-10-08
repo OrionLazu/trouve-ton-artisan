@@ -1,5 +1,6 @@
 import { Route, Routes } from 'react-router';
 import Layout from './components/layout/Layout.jsx';
+import HomePage from './pages/HomePage.jsx';
 import LegalPage from './pages/LegalPage.jsx';
 import NotFoundPage from './pages/NotFoundPage.jsx';
 import { LEGAL_PAGES } from './config/legalPages.js';
@@ -12,7 +13,7 @@ export default function App() {
   return (
     <Routes>
       <Route element={<Layout />}>
-        <Route index element={<p className="container section">Page d’accueil à venir.</p>} />
+        <Route index element={<HomePage />} />
         {LEGAL_PAGES.map((page) => (
           <Route key={page.path} path={page.path} element={<LegalPage title={page.title} />} />
         ))}
