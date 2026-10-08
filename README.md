@@ -5,7 +5,7 @@ et de le contacter via un formulaire (réponse sous 48h).
 
 - **Site en ligne :** <https://trouve-ton-artisan-sage.vercel.app>
 - **Dépôt GitHub :** <https://github.com/OrionLazu/trouve-ton-artisan>
-- **Maquettes Figma :** _à compléter_
+- **Maquettes Figma :** <https://www.figma.com/design/LGnOyKcVU0WRGVn4IzYrOo/Trouve-ton-artisan-%E2%80%93-Maquettes>
 
 ## Technologies
 
