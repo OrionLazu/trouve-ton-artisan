@@ -39,7 +39,7 @@ cp .env.example .env
 
 | Variable | Description | Valeur de développement |
 | --- | --- | --- |
-| `PORT` | Port de l'API locale | `3001` |
+| `API_PORT` | Port de l'API locale | `3001` |
 | `SMTP_HOST` / `SMTP_PORT` | Serveur SMTP | `localhost` / `1025` (maildev) |
 | `SMTP_SECURE` | Connexion TLS | `false` |
 | `SMTP_USER` / `SMTP_PASS` | Identifiants SMTP | vides |
