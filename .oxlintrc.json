@@ -1,0 +1,19 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": ["react", "oxc", "import"],
+  "ignorePatterns": ["dist"],
+  "rules": {
+    "no-console": "error",
+    "no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
+    "react/rules-of-hooks": "error",
+    "react/exhaustive-deps": "warn"
+  },
+  "overrides": [
+    {
+      "files": ["server/**", "api/**"],
+      "rules": {
+        "no-console": ["error", { "allow": ["error", "info"] }]
+      }
+    }
+  ]
+}
