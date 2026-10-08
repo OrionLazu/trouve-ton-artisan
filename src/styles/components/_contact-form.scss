@@ -1,0 +1,43 @@
+// Formulaire de contact de la fiche artisan
+
+.contact-form {
+  padding: 1.5rem;
+  border: 1px solid rgba(0, 73, 124, 0.15);
+  border-radius: $border-radius-lg;
+  background-color: $white;
+  box-shadow: 0 0.25rem 1rem rgba(56, 64, 80, 0.08);
+
+  @include media-breakpoint-up(md) {
+    padding: 2rem;
+  }
+
+  &__required-note {
+    margin-bottom: 1.25rem;
+    font-size: 0.875rem;
+  }
+
+  .form-label {
+    font-weight: 600;
+  }
+
+  .invalid-feedback {
+    margin-bottom: 0;
+  }
+
+  // Champ piège pour les robots, placé hors de l'écran
+  &__honeypot {
+    position: absolute;
+    left: -10000px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+
+  &__feedback {
+    margin-top: 1rem;
+
+    .alert {
+      margin-bottom: 0;
+    }
+  }
+}

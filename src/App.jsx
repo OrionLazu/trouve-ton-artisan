@@ -3,6 +3,7 @@ import Layout from './components/layout/Layout.jsx';
 import HomePage from './pages/HomePage.jsx';
 import CategoryPage from './pages/CategoryPage.jsx';
 import SearchPage from './pages/SearchPage.jsx';
+import ArtisanPage from './pages/ArtisanPage.jsx';
 import LegalPage from './pages/LegalPage.jsx';
 import NotFoundPage from './pages/NotFoundPage.jsx';
 import { LEGAL_PAGES } from './config/legalPages.js';
@@ -18,6 +19,7 @@ export default function App() {
         <Route index element={<HomePage />} />
         <Route path="categorie/:slug" element={<CategoryPage />} />
         <Route path="recherche" element={<SearchPage />} />
+        <Route path="artisan/:id" element={<ArtisanPage />} />
         {LEGAL_PAGES.map((page) => (
           <Route key={page.path} path={page.path} element={<LegalPage title={page.title} />} />
         ))}
