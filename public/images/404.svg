@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="240" viewBox="0 0 320 240">
+  <title>Loupe au-dessus d'une boîte à outils vide</title>
+  <ellipse cx="160" cy="214" rx="120" ry="12" fill="#f1f8fc"/>
+  <rect x="60" y="120" width="170" height="88" rx="10" fill="#00497c"/>
+  <rect x="60" y="120" width="170" height="26" rx="10" fill="#0074c7"/>
+  <path d="M112 120v-16a10 10 0 0 1 10-10h46a10 10 0 0 1 10 10v16" fill="none" stroke="#384050" stroke-width="8"/>
+  <rect x="132" y="138" width="26" height="18" rx="4" fill="#f1f8fc"/>
+  <circle cx="228" cy="88" r="42" fill="#f1f8fc" stroke="#384050" stroke-width="10"/>
+  <path d="m258 118 34 34" stroke="#384050" stroke-width="14" stroke-linecap="round"/>
+  <text x="228" y="102" text-anchor="middle" font-family="Arial, sans-serif" font-size="40" font-weight="700" fill="#cd2c2e">?</text>
+</svg>
